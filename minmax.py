@@ -3,10 +3,10 @@ r,c = map(int, input().split())
 elements=[]
 for i in range(r):
     elements+=map(int,input().split())
-#print(elements)
+print(elements)
 matrix=np.array(elements).reshape(r,c)
-# print(matrix)
+print(matrix)
 lst = np.min(matrix, axis =1)
-# print(lst)
+print(lst)
 maxi = np.max(lst)
 print(maxi)
